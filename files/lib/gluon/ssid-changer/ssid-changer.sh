@@ -5,7 +5,7 @@ MINUTES=1440 # only once every timeframe the SSID will change to OFFLINE (set to
 OFFLINE_PREFIX='FF_OFFLINE_' # use something short to leave space for the nodename (no '~' allowed!)
 
 ONLINE_SSID="$(uci get wireless.client_radio0.ssid -q)"
-: ${ONLINE_SSID:="FREIFUNK"} # if for whatever reason ONLINE_SSID is NULL
+: ${ONLINE_SSID:="Freifunk"} # if for whatever reason ONLINE_SSID is NULL
 
 # Generate an Offline SSID with the first and last part of the nodename to allow owner to recognise wich node is down
 NODENAME="$(uname -n)"
